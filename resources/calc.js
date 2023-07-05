@@ -5,13 +5,13 @@ const op = document.querySelector('[name="op"]').value;
 
 let result;
 
-	if (op === 'plus') {
+	       if (op === 'plus') {
 	result = numl + num2;
+	} else if (op === 'multiply') {
+	result = numl * num2;
 	} else if (op === 'minus') {
 	result = numl - num2;
-	} else if (op === 'multiply'){
-	result = numl * num2;
-	} else if (op === 'divide'){
+	} else if (op === 'divide') {
 	result = numl / num2;
 	} else {
 	console.error('Wrong op!');
@@ -26,5 +26,13 @@ calculate();
 });
 
 document.querySelector('[name="op"]').addEventListener('change',function() {
+calculate();
+});
+
+document.querySelector('[name="num1"]').addEventListener('input',function() {
+calculate();
+});
+
+document.querySelector('[name="num2"]').addEventListener('input',function() {
 calculate();
 });
