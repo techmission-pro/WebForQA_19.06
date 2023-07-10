@@ -1,0 +1,5 @@
+*
+.div-block-6: nth-child(even){
+background-color: 	#A9A9A9
+color: #0000FF
+}
