@@ -7,13 +7,13 @@ function calculate() {
 	
 	if (op === 'plus') {
 	result = num1 + num2;
-	) else if (op === 'minus') {
+	} else if (op === 'minus') {
 	result = num1 - num2;
-	) else if (op === 'multiply') {
+	} else if (op === 'multiply') {
 	result = num1 * num2;
-	) else if (op === 'divide') {
+	} else if (op === 'divide') {
 	result = num1 / num2;
-	) else (
+	} else (
 	console.error('Wrong op');
 	alert('Wrong operation is selected');
 	}
@@ -23,16 +23,16 @@ function calculate() {
 
 document.querySelector('.calc-calculate').addEventListener('click', function() {
 calculate ();
-}};
+});
 
 document.querySelector('[name="op"]').addEventListener('change', function() {
 calculate();
-}};
+});
 
 document.querySelector('[name="num1"]').addEventListener('change', function() {
 calculate();
-}};
+});
 
 document.querySelector('[name="num2"]').addEventListener('change', function() {
 calculate();
-}};
+});
